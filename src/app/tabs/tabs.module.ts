@@ -6,6 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { TabsPageRoutingModule } from './tabs-routing.module';
 
 import { TabsPage } from './tabs.page';
+import { TaskListComponent } from '../components/TaskComponents/task-list/task-list.component';
+import { TasksComponent } from '../components/TaskComponents/tasks/tasks.component';
 
 @NgModule({
   imports: [

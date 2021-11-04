@@ -1,0 +1,23 @@
+<form [formGroup]="this.tasksService.form" (ngSubmit)="onSubmit()">
+  <ion-item>
+    <ion-label position="floating">Title</ion-label>
+    <ion-input placeholder="Title" formControlName="title" type="text"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-label position="floating">Description</ion-label>
+    <ion-input placeholder="Description" formControlName="description" type="text"></ion-input>
+  </ion-item>
+
+  <ion-row>
+    <ion-col>
+      <ion-button id="submit" color="primary" expand="full" (click)="onSubmit()">Submit</ion-button>
+    </ion-col>
+  </ion-row>
+
+  
+  <div #mySuccessOut>
+    <span>Task Added Successfully!</span>
+  </div>
+  
+
+</form>

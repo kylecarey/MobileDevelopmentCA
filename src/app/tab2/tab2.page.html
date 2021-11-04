@@ -1,28 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 2
+      Create Task
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content >
-  <ion-item lines="full">
-    <ion-label position="floating">Title</ion-label>
-    <ion-input [(ngModel)]="task.title" type="string" placeholder="Enter title..." required></ion-input>
-  </ion-item>
-
-  <ion-item lines="full">
-    <ion-label position="floating">Description</ion-label>
-    <ion-input [(ngModel)]="task.description" type="string" placeholder="Enter description of task..." required>
-    </ion-input>
-  </ion-item>
-
-  <ion-row>
-    <ion-col>
-      <ion-button color="primary" expand="full" (click)="addTask()">Create Task</ion-button>
-    </ion-col>
-  </ion-row>
-
-  
+<ion-content>
+  <app-tasks></app-tasks>
 </ion-content>
